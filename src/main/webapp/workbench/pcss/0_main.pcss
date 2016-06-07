@@ -1,0 +1,124 @@
+@import "utils.pcss";
+
+html, body{
+   height: 100%;
+   color: $txt;
+}
+
+#appbody{
+	position: absolute;
+	top: 30px; bottom: 10px;
+	left: 50%;
+	width: 1200px;
+	margin-left: -600px;
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+/* --------- Common Elements --------- */
+H3 {
+	font-size: 24px;
+	font-weight: 200;
+	letter-spacing: .1em;
+	color: $txt; 
+}
+/* --------- /Common Elements --------- */
+
+
+/* --------- Common Form --------- */
+.form-control[disabled], fieldset[disabled] .form-control{
+	border: none;
+	background: $bkg-lighter;
+}
+.form-control, input, textarea {
+	box-shadow: none;
+}
+label, .label{
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: .1em;
+	color: $txt-label;
+	text-align: right;
+}
+
+.helper-text{
+	font-size: 11px;
+	color: $txt-lighter;
+	margin-top: 4px;
+}
+
+.form-group{
+	margin-bottom: 30px;
+}
+.flex-parent{
+	display: -webkit-box;
+	height: 20px;
+	width: 800px;
+	.color-red{
+		background-color: red;
+	}
+	.color-blue{
+		background-color: blue;
+	}
+	.color-yellow{
+		background-color: yellow;
+	}
+	.color-white{
+		background-color: white;
+	}
+	.color-grey{
+		background-color: grey;
+	}
+	.color-green{
+		background-color: green;
+	}
+	.color-orange{
+		background-color: orange;
+	}
+	.flex-child-box{
+		height: 20px;
+	}
+	.bolder{
+		border: 1px solid;
+	}
+	.flex-child-1-nowidth{
+		-webkit-box-flex: 1;
+	}
+	.flex-child-1{
+		-webkit-box-flex: 1;
+		width: 0%;
+	}
+	.flex-child-2{
+		-webkit-box-flex: 2;
+		width: 0%;
+	}
+	.flex-child-3{
+		-webkit-box-flex: 3;
+		width: 0%;
+	}
+	.flex-child-9{
+		-webkit-box-flex: 9;
+		width: 0%;
+	}
+}
+
+.control-title{
+    text-align: right;
+}
+/* --------- /Common Form --------- */
+
+
+
+/* --------- Common nav --------- */
+.nav-tabs{
+	li{
+		cursor: pointer;
+	}
+}
+/* --------- /Common nav --------- */
